@@ -9,6 +9,8 @@
   <link type="text/css" rel="stylesheet" href="./styles/reset.css"/>
   <link type="text/css" rel="stylesheet" href="./styles/style.css"/>
   <link type="text/css" rel="stylesheet" href="./styles/mobile.css"/>
+
+  <script src="./scripts/daily.js" defer></script>
 </head>
 <body>
   
@@ -25,9 +27,9 @@
       </header>
       <nav>
         <ul class="navBar">
-          <li><a href="#">Daily</a></li>
-          <li><a href="#" style="color:white;">Weekly</a></li>
-          <li><a href="#">Monthly</a></li>
+          <li ><a id="daily" href="#">Daily</a></li>
+          <li><a id="weekly" href="#" style="color:white;">Weekly</a></li>
+          <li><a id="monthly" href="#">Monthly</a></li>
         </ul>
       </nav>
     </section>
@@ -35,15 +37,15 @@
     <section class="item item2">
       <div class="content">
         <div class="nameTask">
-          <p>Work</p>
+          <p id="work" class="task">Work</p>
           <a href="#" rel="next">...</a>
         </div>
         <div class="main-content">
           <div class="quantyHours">
-            <p>32hrs</p>
+            <p class="current">32hrs</p>
           </div>
           <div class="lastWeek">
-            <p>Last Week - 36 hrs</p>
+            <p class="previous">Last Week - 36 hrs</p>
           </div>
         </div>
       </div>
@@ -52,15 +54,15 @@
     <section class="item item3">
       <div class="content">
         <div class="nameTask">
-          <p>Play</p>
+          <p id="play" class="task">Play</p>
           <a href="#" rel="next">...</a>
         </div>
         <div class="main-content">
           <div class="quantyHours">
-            <p>10hrs</p>
+            <p class="current">10hrs</p>
           </div>
           <div class="lastWeek">
-            <p>Last Week - 8 hrs</p>
+            <p class="previous">Last Week - 8 hrs</p>
           </div>
         </div>
       </div>
@@ -69,15 +71,15 @@
     <section class="item item4">
       <div class="content">
         <div class="nameTask">
-          <p>Study</p>
+          <p id="study" class="task">Study</p>
           <a href="#" rel="next">...</a>
         </div>
         <div class="main-content">
           <div class="quantyHours">
-            <p>4hrs</p>
+            <p class="current">4hrs</p>
           </div>
           <div class="lastWeek">
-            <p>Last Week - 7 hrs</p>
+            <p class="previous">Last Week - 7 hrs</p>
           </div>
         </div>
       </div>
@@ -86,15 +88,15 @@
     <section class="item item5">
       <div class="content">
         <div class="nameTask">
-          <p>Exercise</p>
+          <p id="exercise" class="task">Exercise</p>
           <a href="#" rel="next">...</a>
         </div>
         <div class="main-content">
           <div class="quantyHours">
-            <p>4hrs</p>
+            <p class="current">4hrs</p>
           </div>
           <div class="lastWeek">
-            <p>Last Week - 5 hrs</p>
+            <p class="previous">Last Week - 5 hrs</p>
           </div>
         </div>
       </div>
@@ -103,15 +105,15 @@
     <section class="item item6">
       <div class="content">
         <div class="nameTask">
-          <p>Social</p>
+          <p id="social" class="task">Social</p>
           <a href="#" rel="next">...</a>
         </div>
         <div class="main-content">
           <div class="quantyHours">
-            <p>5hrs</p>
+            <p class="current">5hrs</p>
           </div>
           <div class="lastWeek">
-            <p>Last Week - 10 hrs</p>
+            <p class="previous">Last Week - 10 hrs</p>
           </div>
         </div>
       </div>
@@ -120,15 +122,15 @@
     <section class="item item7">
       <div class="content">
         <div class="nameTask">
-          <p>Self Care</p>
+          <p class="task" id="self-care">Self Care</p>
           <a href="#" rel="next">...</a>
         </div>
         <div class="main-content">
           <div class="quantyHours">
-            <p>2hrs</p>
+            <p class="current">2hrs</p>
           </div>
           <div class="lastWeek">
-            <p>Last Week - 2 hrs</p>
+            <p class="previous">Last Week - 2 hrs</p>
           </div>
         </div>
       </div>

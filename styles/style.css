@@ -2,16 +2,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+body{
+    height:80vh;
+}
+
+html{
+    overflow-y: hidden;
+}
+
 html,
 body{
     font-size:62.5%;
-    height:80vh;
+    
 }
 
 .container{
     width:100%;
     max-width:1080px;
-    margin:4% auto;
+    margin:1% auto;
     padding:20px;
 
     display:grid;
@@ -184,17 +192,21 @@ body{
 
 .navBar{
     padding:20px;
-    line-height:40px;
+    line-height:20px;
 
     font-size:1.8rem;
     margin:auto;
 
     
 }
+.navBar li {
+    margin-bottom:30px;
+}
 
 .navBar a {
     color:#4D5191;
     font-weight:bold;
+    padding:10px;
 }
 .navBar a:hover {
     color:#fff;
